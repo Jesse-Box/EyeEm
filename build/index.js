@@ -135,7 +135,7 @@ webpackContext.id = "./code sync recursive \\.(t|j)s(x?)|\\.css$";
 Object.defineProperty(exports, "__esModule", { value: true });
 // WARNING: this file is auto generated, any changes will be lost
 const framer_1 = __webpack_require__(/*! framer */ "framer");
-const canvas = framer_1.CanvasStore.shared({"children":[]});
+const canvas = framer_1.CanvasStore.shared(); // CANVAS_DATA;
 
 
 /***/ }),
@@ -194,7 +194,7 @@ exports.__framer__ = package
 /*! exports provided: main, license, devDependencies, peerDependencies, framer, author, default */
 /***/ (function(module) {
 
-module.exports = {"main":"dist/index.js","license":"MIT","devDependencies":{"@types/react":"^16.4.16"},"peerDependencies":{"framer":"^0.10","react":"^16.3.0","react-dom":"^16.3.0"},"framer":{"id":"6af65d46-8c8a-4db3-8005-5cbff7f0fcab"},"author":"Jesse Box"};
+module.exports = {"main":"dist/index.js","license":"MIT","devDependencies":{"@types/react":"^16.4.16"},"peerDependencies":{"framer":"^0.10","react":"^16.3.0","react-dom":"^16.3.0"},"framer":{"id":"92b9b531-6153-4e16-a494-5cec547987ac"},"author":"Jesse Box"};
 
 /***/ }),
 
