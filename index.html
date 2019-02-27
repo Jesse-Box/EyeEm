@@ -1,4 +1,42 @@
-(function webpackUniversalModuleDefinition(root, factory) {
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="mobile-web-app-capable" content="yes" />
+
+        <script src="build/react.development.js"></script>
+        <script src="build/react-dom.development.js"></script>
+        <script src="build/framer.js"></script>
+
+        <link href="build/Draft.css" rel="stylesheet" />
+        <link href="build/style.css" rel="stylesheet" />
+
+        <!-- Workaround for a WebKit bug: loading via URL from the stylesheet is denied if this file is loaded via file:/// -->
+        <style>
+            @font-face {
+                font-family: "Roboto Mono";
+                font-style: normal;
+                font-weight: 400;
+                src: local("Roboto Mono"), local("RobotoMono-Regular"),
+                    url("fonts/RobotoMono-Regular.ttf") format("truetype");
+            }
+        </style>
+        <style>
+            * {
+                -webkit-font-smoothing: antialiased;
+            }
+        </style>
+    </head>
+
+    <body>
+        <main></main>
+        <script src="build/standalone.js"></script>
+        
+        <script id="build_index_js">
+        (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory(require("framer"));
 	else if(typeof define === 'function' && define.amd)
@@ -211,3 +249,317 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_framer__;
 
 /******/ });
 });
+        </script>
+        
+        <script>
+        const data = {
+  "presentationNode": {
+    "componentClass": "Frame",
+    "props": {
+      "key": "Iv8FDsMh9",
+      "id": "id_Iv8FDsMh9",
+      "willChangeTransform": false,
+      "opacity": 1,
+      "radius": 0,
+      "rotation": 0,
+      "visible": true,
+      "overflow": "hidden",
+      "background": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 1,
+        "h": 0,
+        "s": 0,
+        "l": 0,
+        "initialValue": "hsl(0, 0%, 0%)",
+        "roundA": 1,
+        "format": "hsl"
+      },
+      "left": 0,
+      "right": null,
+      "top": 0,
+      "bottom": null,
+      "width": 375,
+      "height": 667,
+      "aspectRatio": null,
+      "centerX": "0%",
+      "centerY": "0%",
+      "parentSize": null
+    },
+    "children": [
+      {
+        "componentClass": "Frame",
+        "props": {
+          "key": "Uw2DtRQNp",
+          "id": "id_Uw2DtRQNp",
+          "willChangeTransform": false,
+          "opacity": 1,
+          "radius": 0,
+          "rotation": 0,
+          "visible": true,
+          "overflow": "visible",
+          "background": {
+            "r": 255,
+            "g": 0,
+            "b": 0,
+            "a": 0.5,
+            "h": 0,
+            "s": 1,
+            "l": 0.5,
+            "initialValue": "hsla(0, 100%, 50%, 0.5)",
+            "roundA": 0.5,
+            "format": "hsl"
+          },
+          "left": null,
+          "right": null,
+          "top": null,
+          "bottom": null,
+          "width": 200,
+          "height": 200,
+          "aspectRatio": 1,
+          "centerX": "49.86666666666667%",
+          "centerY": "49.92503748125937%",
+          "parentSize": null
+        },
+        "children": [],
+        "navigationLink": {
+          "navigationTarget": "TkwTKwRjF",
+          "navigationTransition": "push",
+          "navigationTransitionDirection": "left",
+          "navigationTransitionOverrides": {
+            "backdropColor": "rgba(4,4,15,.4)"
+          }
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "name": "Page1",
+    "id": "Iv8FDsMh9",
+    "width": 375,
+    "height": 667,
+    "settings": {
+      "deviceType": "framer/FramerAppleIPhone8",
+      "deviceDescriptor": {
+        "hands": {
+          "Hand 1": {
+            "package": "@framer/framer.device-hand-iphone-1"
+          },
+          "Hand 2": {
+            "package": "@framer/framer.device-hand-iphone-2"
+          }
+        },
+        "pixelRatio": 2,
+        "canRotate": true,
+        "screen": {
+          "width": 750,
+          "height": 1334
+        },
+        "kind": "phone",
+        "skins": {
+          "Space Gray": {
+            "package": "@framer/framer.device-skin-apple-iphone8-space-gray"
+          },
+          "Silver": {
+            "package": "@framer/framer.device-skin-apple-iphone8-silver"
+          },
+          "Gold": {
+            "package": "@framer/framer.device-skin-apple-iphone8-gold"
+          }
+        },
+        "title": "Framer Bezel Apple iPhone 8",
+        "category": "Framer Bezel",
+        "selector": "Apple iPhone 8"
+      },
+      "zoom": -1,
+      "rotate": false,
+      "bezel": false,
+      "responsive": false,
+      "touch": true,
+      "__class": "PreviewSettings"
+    }
+  },
+  "navigation": {
+    "TkwTKwRjF": {
+      "componentClass": "Frame",
+      "props": {
+        "key": "TkwTKwRjF",
+        "id": "id_TkwTKwRjF",
+        "willChangeTransform": false,
+        "opacity": 1,
+        "radius": 0,
+        "rotation": 0,
+        "visible": true,
+        "overflow": "hidden",
+        "background": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 1,
+          "h": 0,
+          "s": 0,
+          "l": 0,
+          "initialValue": "hsl(0, 0%, 0%)",
+          "roundA": 1,
+          "format": "hsl"
+        },
+        "left": 475,
+        "right": null,
+        "top": 0,
+        "bottom": null,
+        "width": 375,
+        "height": 667,
+        "aspectRatio": null,
+        "centerX": "0%",
+        "centerY": "0%",
+        "parentSize": null
+      },
+      "children": [
+        {
+          "componentClass": "Frame",
+          "props": {
+            "key": "V54lF2q40",
+            "id": "id_V54lF2q40",
+            "willChangeTransform": false,
+            "opacity": 1,
+            "radius": 0,
+            "rotation": 0,
+            "visible": true,
+            "overflow": "visible",
+            "background": {
+              "r": 71,
+              "g": 179,
+              "b": 7,
+              "a": 1,
+              "h": 97.67441860465115,
+              "s": 0.9247311827956989,
+              "l": 0.36470588235294116,
+              "initialValue": "rgba(71, 179, 7, 1.00)",
+              "roundA": 1,
+              "format": "rgb"
+            },
+            "left": null,
+            "right": null,
+            "top": null,
+            "bottom": null,
+            "width": 200,
+            "height": 200,
+            "aspectRatio": 1,
+            "centerX": "49.86666666666667%",
+            "centerY": "49.92503748125937%",
+            "parentSize": null
+          },
+          "children": [],
+          "navigationLink": {
+            "navigationTarget": "Iv8FDsMh9",
+            "navigationTransition": "push",
+            "navigationTransitionDirection": "left",
+            "navigationTransitionOverrides": {
+              "backdropColor": "rgba(4,4,15,.4)"
+            }
+          }
+        }
+      ]
+    },
+    "Iv8FDsMh9": {
+      "componentClass": "Frame",
+      "props": {
+        "key": "Iv8FDsMh9",
+        "id": "id_Iv8FDsMh9",
+        "willChangeTransform": false,
+        "opacity": 1,
+        "radius": 0,
+        "rotation": 0,
+        "visible": true,
+        "overflow": "hidden",
+        "background": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 1,
+          "h": 0,
+          "s": 0,
+          "l": 0,
+          "initialValue": "hsl(0, 0%, 0%)",
+          "roundA": 1,
+          "format": "hsl"
+        },
+        "left": 0,
+        "right": null,
+        "top": 0,
+        "bottom": null,
+        "width": 375,
+        "height": 667,
+        "aspectRatio": null,
+        "centerX": "0%",
+        "centerY": "0%",
+        "parentSize": null
+      },
+      "children": [
+        {
+          "componentClass": "Frame",
+          "props": {
+            "key": "Uw2DtRQNp",
+            "id": "id_Uw2DtRQNp",
+            "willChangeTransform": false,
+            "opacity": 1,
+            "radius": 0,
+            "rotation": 0,
+            "visible": true,
+            "overflow": "visible",
+            "background": {
+              "r": 255,
+              "g": 0,
+              "b": 0,
+              "a": 0.5,
+              "h": 0,
+              "s": 1,
+              "l": 0.5,
+              "initialValue": "hsla(0, 100%, 50%, 0.5)",
+              "roundA": 0.5,
+              "format": "hsl"
+            },
+            "left": null,
+            "right": null,
+            "top": null,
+            "bottom": null,
+            "width": 200,
+            "height": 200,
+            "aspectRatio": 1,
+            "centerX": "49.86666666666667%",
+            "centerY": "49.92503748125937%",
+            "parentSize": null
+          },
+          "children": [],
+          "navigationLink": {
+            "navigationTarget": "TkwTKwRjF",
+            "navigationTransition": "push",
+            "navigationTransitionDirection": "left",
+            "navigationTransitionOverrides": {
+              "backdropColor": "rgba(4,4,15,.4)"
+            }
+          }
+        }
+      ]
+    }
+  }
+};
+        const $build_index_js = document.querySelector("#build_index_js")
+        const script = $build_index_js ? $build_index_js.textContent.trim() : ""
+        
+        // need react to have rendered, before we can do setPreviewData
+        setTimeout(() => {
+            if (script.length > 0) {
+                setPreviewData(script, data)
+            } else {
+                fetch("build/index.js").then((response) => {
+                    return response.text().then((script) => {
+                        setPreviewData(script, data)
+                    })
+                })
+            }
+        }, 0)
+        </script>
+    </body>
+</html>
