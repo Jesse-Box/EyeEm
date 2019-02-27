@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="mobile-web-app-capable" content="yes" />
+
+        <script src="build/react.development.js"></script>
+        <script src="build/react-dom.development.js"></script>
+        <script src="build/framer.js"></script>
+
+        <link href="build/Draft.css" rel="stylesheet" />
+        <link href="build/style.css" rel="stylesheet" />
+
+        <!-- Workaround for a WebKit bug: loading via URL from the stylesheet is denied if this file is loaded via file:/// -->
+        <style>
+            @font-face {
+                font-family: "Roboto Mono";
+                font-style: normal;
+                font-weight: 400;
+                src: local("Roboto Mono"), local("RobotoMono-Regular"),
+                    url("fonts/RobotoMono-Regular.ttf") format("truetype");
+            }
+        </style>
+        <style>
+            * {
+                -webkit-font-smoothing: antialiased;
+            }
+        </style>
+    </head>
+
+    <body>
+        <main></main>
+        <script src="build/standalone.js"></script>
+        
+        <script id="build_index_js">
+        (function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory(require("framer"));
+	else if(typeof define === 'function' && define.amd)
+		define(["framer"], factory);
+	else {
+		var a = typeof exports === 'object' ? factory(require("framer")) : factory(root["Framer"]);
+		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
+	}
+})(window, function(__WEBPACK_EXTERNAL_MODULE_framer__) {
+return /******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		try { modules[moduleId].call(module.exports, module, module.exports, __webpack_require__); } catch (error) { module.exports = { error } }
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/ 	// asset url
+/******/ 	var __module_i = eval("typeof module !== 'undefined' ? module.i : ''");
+/******/ 	var __framer_package = (/(node_modules[/].*)[/](build|dist).index.js/.exec(__module_i) || [])[1]
+/******/ 	function __asset_url__(src) { return __WEBPACK_EXTERNAL_MODULE_framer__.serverURL(__framer_package, src) };
+/******/ 	installedModules['framer/resource'] = { i: 'framer/resource', l: true, exports: { url: __asset_url__ } };
+/******/
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = "./package.js");
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./code sync recursive \\.(t|j)s(x?)|\\.css$":
+/*!***************************************!*\
+  !*** ./code sync \.(t|j)s(x?)|\.css$ ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./canvas.tsx": "./code/canvas.tsx"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	var module = __webpack_require__(id);
+	return module;
+}
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) { // check for number or string
+		var e = new Error('Cannot find module "' + req + '".');
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return id;
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./code sync recursive \\.(t|j)s(x?)|\\.css$";
+
+/***/ }),
+
+/***/ "./code/canvas.tsx":
+/*!*************************!*\
+  !*** ./code/canvas.tsx ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+// WARNING: this file is auto generated, any changes will be lost
+const framer_1 = __webpack_require__(/*! framer */ "framer");
+const canvas = framer_1.CanvasStore.shared({"children":[]});
+
+
+/***/ }),
+
+/***/ "./package.js":
+/*!********************!*\
+  !*** ./package.js ***!
+  \********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// The template for the dynamic webpack entry. Be aware of the variables
+
+const packageJson = __webpack_require__(/*! ./package.json */ "./package.json")
+
+const package = {
+    packageJson,
+    sourceModules: {},
+    dependencies: {},
+}
+
+// This is a special webpack thing that watches the whole directory
+// https://github.com/webpack/docs/wiki/context
+const ctx = __webpack_require__("./code sync recursive \\.(t|j)s(x?)|\\.css$")
+
+ctx.keys().forEach(key => {
+    package.sourceModules[key] = () => ctx(key)
+})
+
+// The packages are passed in through a template
+const packages = {}
+
+                packages["framer"] = () => {
+                    var package = {}
+                    try {
+                        package = __webpack_require__(/*! framer */ "framer")
+                    } catch (e) {
+                        console.log(e)
+                    }
+                    package.__framer__ = package.__framer__ || {}
+                    package.__framer__.packageJson = {"name":"framer","version":"0.10.8","main":"build/framer.js","author":"Framer","license":"MIT","scripts":{"coverage":"jest --config jest.json --coverage","test":"jest --config jest.json","watch":"jest --config jest.json --watch"},"devDependencies":{"@microsoft/api-documenter":"^1.5.47","@microsoft/api-extractor":"^7","@types/chalk":"^2.2.0","@types/draft-js":"0.10.19","@types/enzyme":"^3.1.10","@types/enzyme-adapter-react-16":"^1.0.3","@types/hsluv":"https://github.com/framer/typed_hsluv#bump","@types/jest":"^23.0.0","@types/jest-diff":"^20.0.0","@types/jest-matcher-utils":"^21.0.1","@types/node":"^9.6.0","@types/react":"^16","@types/react-dom":"^16","cache-loader":"^1.2.2","chalk":"^2.4.1","convert-tsconfig-paths-to-webpack-aliases":"^0.9.2","css.escape":"^1.5.1","draft-js":"0.10.4","enzyme":"^3.3.0","enzyme-adapter-react-16":"^1.1.1","eventemitter3":"^3.1.0","fork-ts-checker-webpack-plugin":"^0.4.1","hoist-non-react-statics":"^2.5.0","hsluv":"^0.0.3","immutable":"^3.8.2","jest":"^23.1.0","jest-diff":"^23.6.0","jest-junit":"^5.2.0","progress-bar-webpack-plugin":"^1.11.0","raf":"^3.4.0","react":"~16.4","react-dev-utils":"^5.0.1","react-dom":"~16.4","semver":"^5.6.0","ts-jest":"^23.10.5","ts-loader":"^4.1.0","typescript":"^3.0.1","watch":"^1.0.2","webpack":"^4.4.1","webpack-cli":"^3.1.2","webpack-dev-server":"^3.1.10","xcssmatrix":"^0.2.2"},"peerDependencies":{"react":"^16.3","react-dom":"^16.3"},"tsdoc":{"tsdocFlavor":"AEDoc"},"framer":{"components":[{"name":"Scroll","children":true,"properties":[{"key":"direction","title":"Direction","kind":"enum","options":["horizontal","vertical","both"]}]},{"name":"Page"},{"name":"Stack"},{"name":"FramerAppleWatch38","type":"device"},{"name":"FramerAppleWatch42","type":"device"},{"name":"FramerSonySmartWatch","type":"device"},{"name":"FramerAppleIPhoneSE","type":"device"},{"name":"FramerAppleIPhone8","type":"device"},{"name":"FramerAppleIPhone8Plus","type":"device"},{"name":"FramerAppleIPhoneXS","type":"device"},{"name":"FramerAppleIPhoneXR","type":"device"},{"name":"FramerAppleIPhoneXSMax","type":"device"},{"name":"FramerGooglePixel2","type":"device"},{"name":"FramerGooglePixel2XL","type":"device"},{"name":"FramerGooglePixel3","type":"device"},{"name":"FramerGooglePixel3XL","type":"device"},{"name":"FramerSamsungNote5","type":"device"},{"name":"FramerSamsungGalaxyS9","type":"device"},{"name":"FramerAppleIPadAir","type":"device"},{"name":"FramerAppleIPadMini","type":"device"},{"name":"FramerAppleIPadPro","type":"device"},{"name":"FramerGoogleNexusTablet","type":"device"},{"name":"FramerMicrosoftSurfacePro3","type":"device"},{"name":"FramerMicrosoftSurfacePro4","type":"device"},{"name":"FramerAppleIMac","type":"device"},{"name":"FramerAppleThunderboltDisplay","type":"device"},{"name":"FramerAppleMacBook","type":"device"},{"name":"FramerAppleMacBookAir","type":"device"},{"name":"FramerAppleMacBookPro","type":"device"},{"name":"FramerDellXPS","type":"device"},{"name":"FramerMicrosoftSurfaceBook","type":"device"},{"name":"FramerSonyW850C","type":"device"},{"name":"FramerStoreArtwork","type":"device"},{"name":"FramerStoreIcon","type":"device"}]}}
+                    return package
+                }
+
+package.dependencies = packages
+
+exports.__framer__ = package
+
+
+/***/ }),
+
+/***/ "./package.json":
+/*!**********************!*\
+  !*** ./package.json ***!
+  \**********************/
+/*! exports provided: main, license, devDependencies, peerDependencies, framer, author, default */
+/***/ (function(module) {
+
+module.exports = {"main":"dist/index.js","license":"MIT","devDependencies":{"@types/react":"^16.4.16"},"peerDependencies":{"framer":"^0.10","react":"^16.3.0","react-dom":"^16.3.0"},"framer":{"id":"6af65d46-8c8a-4db3-8005-5cbff7f0fcab"},"author":"Jesse Box"};
+
+/***/ }),
+
+/***/ "framer":
+/*!******************************************************************************************!*\
+  !*** external {"root":"Framer","commonjs2":"framer","commonjs":"framer","amd":"framer"} ***!
+  \******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_framer__;
+
+/***/ })
+
+/******/ });
+});
+        </script>
+        
+        <script>
+        const data = {
+  "presentationNode": {
+    "componentClass": "Frame",
+    "props": {
+      "key": "cPff8rtHH",
+      "id": "id_cPff8rtHH",
+      "willChangeTransform": false,
+      "opacity": 1,
+      "radius": 0,
+      "rotation": 0,
+      "visible": true,
+      "overflow": "hidden",
+      "background": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 1,
+        "h": 0,
+        "s": 0,
+        "l": 0,
+        "initialValue": "hsl(0, 0%, 0%)",
+        "roundA": 1,
+        "format": "hsl"
+      },
+      "left": 1252,
+      "right": null,
+      "top": 0,
+      "bottom": null,
+      "width": 1152,
+      "height": 720,
+      "aspectRatio": null,
+      "centerX": "0%",
+      "centerY": "0%",
+      "parentSize": null
+    },
+    "children": [
+      {
+        "componentClass": "Frame",
+        "props": {
+          "key": "AC917klQs",
+          "id": "id_AC917klQs",
+          "willChangeTransform": false,
+          "opacity": 1,
+          "radius": 0,
+          "rotation": 0,
+          "visible": true,
+          "overflow": "visible",
+          "background": {
+            "r": 71,
+            "g": 179,
+            "b": 7,
+            "a": 1,
+            "h": 97.67441860465115,
+            "s": 0.9247311827956989,
+            "l": 0.36470588235294116,
+            "initialValue": "rgba(71, 179, 7, 1.00)",
+            "roundA": 1,
+            "format": "rgb"
+          },
+          "left": null,
+          "right": null,
+          "top": null,
+          "bottom": null,
+          "width": 217,
+          "height": 217,
+          "aspectRatio": 1,
+          "centerX": "50.04340277777778%",
+          "centerY": "50.06944444444444%",
+          "parentSize": null
+        },
+        "children": [],
+        "navigationLink": {
+          "navigationTarget": "d6e3FOczu",
+          "navigationTransition": "push",
+          "navigationTransitionDirection": "left",
+          "navigationTransitionOverrides": {
+            "backdropColor": "rgba(4,4,15,.4)"
+          }
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "name": "Page2",
+    "id": "cPff8rtHH",
+    "width": 1152,
+    "height": 720,
+    "settings": {
+      "deviceType": "framer/FramerAppleMacBook",
+      "deviceDescriptor": {
+        "hands": {},
+        "pixelRatio": 2,
+        "canRotate": false,
+        "screen": {
+          "width": 2304,
+          "height": 1440
+        },
+        "kind": "computer",
+        "skins": {
+          "MacBook": {
+            "package": "@framer/framer.device-skin-apple-macbook"
+          }
+        },
+        "title": "Framer Bezel Apple MacBook",
+        "category": "Framer Bezel",
+        "selector": "Apple MacBook"
+      },
+      "zoom": -1,
+      "rotate": false,
+      "bezel": false,
+      "responsive": false,
+      "touch": true,
+      "__class": "PreviewSettings"
+    }
+  },
+  "navigation": {
+    "d6e3FOczu": {
+      "componentClass": "Frame",
+      "props": {
+        "key": "d6e3FOczu",
+        "id": "id_d6e3FOczu",
+        "willChangeTransform": false,
+        "opacity": 1,
+        "radius": 0,
+        "rotation": 0,
+        "visible": true,
+        "overflow": "hidden",
+        "background": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 1,
+          "h": 0,
+          "s": 0,
+          "l": 0,
+          "initialValue": "hsl(0, 0%, 0%)",
+          "roundA": 1,
+          "format": "hsl"
+        },
+        "left": 0,
+        "right": null,
+        "top": 0,
+        "bottom": null,
+        "width": 1152,
+        "height": 720,
+        "aspectRatio": null,
+        "centerX": "0%",
+        "centerY": "0%",
+        "parentSize": null
+      },
+      "children": [
+        {
+          "componentClass": "Frame",
+          "props": {
+            "key": "ezY2gtTPN",
+            "id": "id_ezY2gtTPN",
+            "willChangeTransform": false,
+            "opacity": 1,
+            "radius": 0,
+            "rotation": 0,
+            "visible": true,
+            "overflow": "visible",
+            "background": {
+              "r": 68,
+              "g": 85,
+              "b": 187,
+              "a": 1,
+              "h": 231.42857142857144,
+              "s": 0.4666666666666666,
+              "l": 0.5,
+              "initialValue": "#4455BB",
+              "roundA": 1,
+              "format": "rgb"
+            },
+            "left": null,
+            "right": null,
+            "top": null,
+            "bottom": null,
+            "width": 217,
+            "height": 217,
+            "aspectRatio": 1,
+            "centerX": "50.04340277777778%",
+            "centerY": "50.06944444444444%",
+            "parentSize": null
+          },
+          "children": [],
+          "navigationLink": {
+            "navigationTarget": "cPff8rtHH",
+            "navigationTransition": "push",
+            "navigationTransitionDirection": "left",
+            "navigationTransitionOverrides": {
+              "backdropColor": "rgba(4,4,15,.4)"
+            }
+          }
+        }
+      ]
+    },
+    "cPff8rtHH": {
+      "componentClass": "Frame",
+      "props": {
+        "key": "cPff8rtHH",
+        "id": "id_cPff8rtHH",
+        "willChangeTransform": false,
+        "opacity": 1,
+        "radius": 0,
+        "rotation": 0,
+        "visible": true,
+        "overflow": "hidden",
+        "background": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 1,
+          "h": 0,
+          "s": 0,
+          "l": 0,
+          "initialValue": "hsl(0, 0%, 0%)",
+          "roundA": 1,
+          "format": "hsl"
+        },
+        "left": 1252,
+        "right": null,
+        "top": 0,
+        "bottom": null,
+        "width": 1152,
+        "height": 720,
+        "aspectRatio": null,
+        "centerX": "0%",
+        "centerY": "0%",
+        "parentSize": null
+      },
+      "children": [
+        {
+          "componentClass": "Frame",
+          "props": {
+            "key": "AC917klQs",
+            "id": "id_AC917klQs",
+            "willChangeTransform": false,
+            "opacity": 1,
+            "radius": 0,
+            "rotation": 0,
+            "visible": true,
+            "overflow": "visible",
+            "background": {
+              "r": 71,
+              "g": 179,
+              "b": 7,
+              "a": 1,
+              "h": 97.67441860465115,
+              "s": 0.9247311827956989,
+              "l": 0.36470588235294116,
+              "initialValue": "rgba(71, 179, 7, 1.00)",
+              "roundA": 1,
+              "format": "rgb"
+            },
+            "left": null,
+            "right": null,
+            "top": null,
+            "bottom": null,
+            "width": 217,
+            "height": 217,
+            "aspectRatio": 1,
+            "centerX": "50.04340277777778%",
+            "centerY": "50.06944444444444%",
+            "parentSize": null
+          },
+          "children": [],
+          "navigationLink": {
+            "navigationTarget": "d6e3FOczu",
+            "navigationTransition": "push",
+            "navigationTransitionDirection": "left",
+            "navigationTransitionOverrides": {
+              "backdropColor": "rgba(4,4,15,.4)"
+            }
+          }
+        }
+      ]
+    }
+  }
+};
+        const $build_index_js = document.querySelector("#build_index_js")
+        const script = $build_index_js ? $build_index_js.textContent.trim() : ""
+        
+        // need react to have rendered, before we can do setPreviewData
+        setTimeout(() => {
+            if (script.length > 0) {
+                setPreviewData(script, data)
+            } else {
+                fetch("build/index.js").then((response) => {
+                    return response.text().then((script) => {
+                        setPreviewData(script, data)
+                    })
+                })
+            }
+        }, 0)
+        </script>
+    </body>
+</html>
