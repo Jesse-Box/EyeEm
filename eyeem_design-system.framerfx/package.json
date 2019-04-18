@@ -5,12 +5,15 @@
 		"@types/react": "^16.4.16"
 	},
 	"peerDependencies": {
-		"framer": "^0.10",
 		"react": "^16.3.0",
 		"react-dom": "^16.3.0"
 	},
 	"framer": {
 		"id": "21496aab-f690-4be9-a19d-62a0b2a241dd"
 	},
-	"author": "Jesse Box"
+	"author": "Jesse Box",
+	"dependencies": {
+		"framer": "^0.10.10",
+		"styled-components": "^4.2.0"
+	}
 }
